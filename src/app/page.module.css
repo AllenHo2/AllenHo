@@ -6,10 +6,10 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  display: grid;
+  display: flex;
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
-  justify-items: center;
+  justify-items: start;
   min-height: 100svh;
   padding: 80px;
   gap: 64px;
@@ -81,6 +81,52 @@
   font-weight: 500;
 }
 
+.text h1 {
+  font-size: 48px; 
+  line-height: 1.2; 
+  font-weight: bold; 
+  margin-bottom: 40px;
+}
+
+.text p {
+  display: inline;
+  font-size: 24px; 
+  line-height: 1.2; 
+}
+
+.about {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+
+.about {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  height: fit-content;
+  border: 3px solid green;
+}
+
+.about p {
+  display: inline;
+  font-size: 18px;
+  line-height: 1.2;
+  max-width: 67%; /* Prevents the text from exceeding the container width */
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.image {
+  width: 500;
+  height: 500;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
 a.primary {
   background: var(--foreground);
   color: var(--background);
@@ -107,6 +153,7 @@ a.secondary {
 .footer img {
   flex-shrink: 0;
 }
+
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -166,3 +213,5 @@ a.secondary {
     filter: invert();
   }
 }
+
+

@@ -35,6 +35,22 @@ a {
   text-decoration: none;
 }
 
+.navbar {
+  position: sticky; /* Keeps it at the top */
+  top: 0; /* Sticks to the top of the viewport */
+  padding: 1rem; /* Adds some padding inside the header */
+  display: flex; /* Arranges links in a row */
+  gap: 2rem; /* Adds space between links */
+  justify-content: center; /* Centers the links horizontally */
+  z-index: 10; /* Ensures it stays above other content */
+}
+
+.navbar a {
+  text-decoration: none; /* Removes underline */
+  font-size: 24; /* Adjusts font size */
+  font-weight: bold; /* Makes links bold */
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
