@@ -127,6 +127,11 @@
   overflow: hidden;
 }
 
+.image img {
+  object-fit: cover;          /* Equivalent to objectFit="cover" */
+  object-position: center;    /* Equivalent to objectPosition="center" */
+}
+
 a.primary {
   background: var(--foreground);
   color: var(--background);
