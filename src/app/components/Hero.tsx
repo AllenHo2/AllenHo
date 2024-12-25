@@ -11,7 +11,7 @@ const Hero = () => {
             </div>
             <div className={styles.image}>
                 <Image
-                    src="/Portfolio.png"
+                    src="/portfolio.png"
                     alt="Portfolio Image"
                     layout="fill" 
                     objectFit="cover"
