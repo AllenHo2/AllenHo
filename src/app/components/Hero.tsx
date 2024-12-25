@@ -13,8 +13,9 @@ const Hero = () => {
                 <Image
                     src="/portfolio.png"
                     alt="Portfolio Image"
-                    width={500}
-                    height={500}
+                    layout="fill" 
+                    objectFit="cover"
+                    objectPosition="center"
                 />
             </div>
         </div>
