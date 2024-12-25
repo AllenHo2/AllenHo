@@ -130,6 +130,8 @@
 .image img {
   object-fit: cover;          /* Equivalent to objectFit="cover" */
   object-position: center;    /* Equivalent to objectPosition="center" */
+  width: 100%;               /* Make the image responsive */
+  height: 100%;              /* Make the image responsive */
 }
 
 a.primary {
