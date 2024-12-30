@@ -1,0 +1,16 @@
+.layout {
+    display: flex;
+    grid-column: auto;
+    min-height: 100svh;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: space-evenly;
+}
+
+.map img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 90;
+    object-fit: cover;          /* Equivalent to objectFit="cover" */
+}

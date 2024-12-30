@@ -94,27 +94,30 @@
   line-height: 1.2; 
 }
 
-.about {
-  display: flex;
-  justify-content: center ;
-  align-items: center;
-  height: 200px;
-  border: 3px solid green;
-}
 
 .about {
-  display: flex;
+  display: flexbox;
   justify-content: center ;
   align-items: center;
   height: fit-content;
   border: 3px solid green;
+}
+.about img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 90;
+  object-fit: cover;          /* Equivalent to objectFit="cover" */
+  object-position: center;    /* Equivalent to objectPosition="center" */
+  width: 25%;               /* Make the image responsive */
+  height: 25%;              /* Make the image responsive */
 }
 
 .about p {
   display: inline;
   font-size: 18px;
   line-height: 1.2;
-  max-width: 67%; /* Prevents the text from exceeding the container width */
+  max-width: 50%; /* Prevents the text from exceeding the container width */
   font-weight: bold;
   word-wrap: break-word;
 }
