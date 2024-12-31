@@ -1,6 +1,19 @@
 import styles from "../page.module.css"
 import Image from "next/image"
 
+const parentStyle = {
+  display: "flex"
+}
+
+const imageStyle = {
+  borderRadius: 90,
+  marginLeft: "auto",
+  marginRight: "auto",
+  objectPosition: "center",
+  width: "25%",
+  height: "25%"
+}
+
 export default function About() {
   return (
     <div>
@@ -15,12 +28,13 @@ export default function About() {
             be something related to healthcare, animal conservation, and climate change, since I care very deeply about our environment. I&apos;ve also dabbled into learning more about streamlining 
             business managements and working with linear models. 
         </p>
-        <div>
+        <div style={parentStyle}>
             <Image
               src="/Sogang_Pose.jpg"
               alt="Sogang Pose.jpg"
               width={700}
               height={1000}
+              style={imageStyle}
             />
         </div>
         <p>

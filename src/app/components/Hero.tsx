@@ -3,11 +3,10 @@ import Image from "next/image"
 
 const Hero = () => {
     return(
-
         <div className={styles.page}>
             <div className={styles.text}>
                 <h1>Allen Ho</h1>
-                <p>Hello! My name is Allen Ho and I am a software engineer based in San Francisco</p>
+                <p>Software Engineer, Computer Science B.S. @ University of San Francisco</p>
             </div>
             <div className={styles.image}>
                 <Image

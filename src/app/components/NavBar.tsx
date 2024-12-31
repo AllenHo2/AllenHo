@@ -2,7 +2,7 @@ import Link from "next/link"
 
 const NavBar = () => {
     return(
-        <div>
+        <div style={{paddingBottom: 10}}>
             <nav className="navbar">
                 <Link href="/">Home</Link>
                 <Link href="../about">About</Link>
