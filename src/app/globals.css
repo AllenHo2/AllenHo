@@ -47,7 +47,7 @@ a {
 
 .navbar a {
   text-decoration: none; /* Removes underline */
-  font-size: 36; /* Adjusts font size */
+  font-size: 36px; /* Adjusts font size */
   font-weight: bold; /* Makes links bold */
 }
 
