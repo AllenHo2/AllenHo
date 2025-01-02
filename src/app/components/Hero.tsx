@@ -1,6 +1,11 @@
 import styles from "../page.module.css";
 import Image from "next/image"
 
+const imageStyle = {
+    borderRadius: "50%",
+    border: "5px double var(--foreground)"
+}
+
 const Hero = () => {
     return(
         <div className={styles.page}>
@@ -12,8 +17,10 @@ const Hero = () => {
                 <Image
                     src="/portfolio.png"
                     alt="Portfolio Image"
-                    width={500}
-                    height={500}
+                    fill={true}
+                    objectFit="cover"
+                    objectPosition="center"
+                    style={imageStyle}
                 />
             </div>
         </div>

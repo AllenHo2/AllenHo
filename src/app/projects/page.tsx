@@ -1,16 +1,12 @@
 import styles from "./projects.module.css"
 import Image from "next/image"
 import Link from "next/link"
+import {imageStyle} from "../style.js"
 
 const projectNames = [
   {id: 1, name: "Envrionmental Impacts in the 21st Centrury", url: "https://allenho2.github.io/Environmental-Impacts-in-the-21st-Century/", img: "/DataViz.jpg"},
   {id: 2, name: "Elevator Simulator", url: "https://github.com/AllenHo2/project02-Elevator", img: "/ElevatorCartoon.jpg"},
 ]
-
-const imageStyle = {
-  borderRadius: 90,
-  border: "5px double #00FF00",
-}
 
 export default function Projects() {
   return (

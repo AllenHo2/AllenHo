@@ -1,16 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./contact.module.css"
+import {imageStyle} from "../style.js"
 
 const contacts = [
   {id: 1, name: "Github", url: "https://github.com/AllenHo2", img: "/GithubLogo.png"},
   {id: 2, name: "Linkedin", url: "https://www.linkedin.com/in/allen-ho-b67a6725b/", img: "/LinkedinLogo.png"},
   {id: 3, name: "Email", url: "mailto:allenho2242004@gmail.com", img: "/EmailLogo.jpg"}
 ]
-
-const imageStyle = {
-  borderRadius: 90,
-}
 
 export default function Contact() {
   return (
