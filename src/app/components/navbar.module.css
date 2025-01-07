@@ -1,3 +1,10 @@
+.container{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
 .links:hover {
     text-size-adjust: 48;
     color:blue;

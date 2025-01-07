@@ -14,7 +14,7 @@ export default function Experience() {
             <h2>University of San Francisco <span style={{marginLeft: 500}}></span>  Bachelors of Science in Computer Science</h2>
             <h2>Sogang University <span style={{marginLeft: 605}}></span>  Expected Graduation: December 2025</h2>
             <br/>
-            <p><strong>Relevant Skills: </strong> C, D3, Java, Git, P5, C++, React.js, Python, Typescript, Vanilla Javascript, HTML, CSS, Terminal</p>
+            <p><strong>Relevant Skills: </strong> C, D3, Java, Git, P5, C++, React.js, Python, Typescript, Vanilla Javascript, HTML, CSS, Terminal, Excel</p>
             <p><strong>Languages: </strong>Cantonese, English, Korean, Japanese</p>
             <br/>
             <h1>Work Experience</h1>
