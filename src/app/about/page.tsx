@@ -12,8 +12,8 @@ const imageStyle = {
   marginLeft: "auto",
   marginRight: "auto",
   objectPosition: "center",
-  width: "25%",
-  height: "25%"
+  width: "50%",
+  height: "50%"
 }
 
 export default function About() {
