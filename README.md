@@ -8,3 +8,4 @@ This project was created with the purpose of showcasing my skills, passion, as w
 ---
 This portfolio was built upon the base of create-next-app while modifying the core website to my personal flavor
 
+

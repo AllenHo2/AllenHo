@@ -46,7 +46,8 @@ export default function Experience() {
             <h1><Link href="../projects" style={{color: "lightBlue"}}>Projects</Link></h1>
             <hr/>
             <br/>
-            <p>Click title to go to Projects page</p>
+            <i>Click header to go to Projects page</i>
+            <br/>
             <br/>
             <h1>Relevant Coursework</h1>
             <hr/>

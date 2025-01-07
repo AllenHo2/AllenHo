@@ -23,8 +23,8 @@ export default function Projects() {
         />
         </Link>
         <br/>
-        <div style={{textAlign: "center"}}>
-        <a href={project.url} style={{alignContent: "center"}}>{project.name}</a>
+        <div className={styles.name}>
+        <a href={project.url}>{project.name}</a>
         </div>
         </div>
       )

@@ -3,7 +3,8 @@ import Image from "next/image"
 
 const parentStyle = {
   display: "flex",
-  padding: 24
+  padding: 24,
+  justifyContent: "center"
 }
 
 const imageStyle = {
@@ -12,8 +13,18 @@ const imageStyle = {
   marginLeft: "auto",
   marginRight: "auto",
   objectPosition: "center",
-  width: "50%",
-  height: "50%"
+  width: "40%",
+  height: "40%"
+}
+
+const collageStyle = {
+  borderRadius: 90,
+  border: "5px double var(--foreground)",
+  marginLeft: "20px",
+  marginRight: "20px",
+  objectPosition: "center",
+  width: "25%",
+  height: "25%"
 }
 
 export default function About() {
@@ -39,18 +50,42 @@ export default function About() {
               style={imageStyle}
             />
         </div>
+        <div style={{textAlign:"center"}}>
+        <i>Me posing with Sogang's Mascot (Albatross) after Sogang festival</i>
+        </div>
+        <br/>
         <p>
             As someone who is also interested in international businesses and cultures, I decided to study abroad at Sogang University in South Korea during the Fall of 2024. From this 
             experience, I got to meet tons of amazing people from different backgrounds that I built strong connections with. One of the most memorable moments of my time at Sogang was 
             getting to meet and connect with a lot of French people since my roommate was French. Through them, I not only got to practice my Korean while I was studying in Korea, but also
             picked up a few French phrases which I intend to study more on.  
+        </p>
             <br/>
+        <div style={parentStyle}>
+        <Image
+          src="/Crocheting.png"
+          alt="Crocheting.png"
+          width={700}
+          height={1000}
+          style={collageStyle}
+        />
+        <Image
+          src="/Drawstring.jpg"
+          alt="Drawstring.jpg"
+          width={700}
+          height={1000}
+          style={collageStyle}
+        />
+        </div>
+        <div style={{textAlign:"center"}}>
+        <i>Me crocheting a drawstring Pochacco bag for my sister</i>
+        </div>
             <br/>
+        <p>
             Besides programming, some of my hobbies include outdoor walks, crocheting, and learning new languages. During my time in Korea, I realized that I really like to explore different
             places and cafes during the day while taking late night walks. I also love to crochet and use my creativity to make gifts for the people I love. To top it all off, I love learning 
             new languages as I think it connects me more to people from different communities and different cultures. It&apos;s also a useful ability that I think would help with my further studies 
             and ventures when I have to communicate with people around the world.
-
         </p>
       </div>
     </div>

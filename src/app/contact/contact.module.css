@@ -6,3 +6,9 @@
     padding-right: 80px;
     justify-content: space-evenly;
 }
+
+.name {
+    display: flex;
+    padding-top: 12px;
+    justify-content: center;
+}

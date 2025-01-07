@@ -13,9 +13,9 @@ export default function Contact() {
   return (
     <div className={styles.layout}>
       {contacts.map((contact) => (
-        <div key={contact.id} className={styles.map}>
+        <div key={contact.id}>
           <Link href={contact.url}>
-          <div className={styles.map}>
+          <div>
           <Image
           src={contact.img}
           alt={contact.name}
@@ -25,6 +25,9 @@ export default function Contact() {
           />
           </div>
           </Link>
+          <div className={styles.name}>
+            {contact.name}
+          </div>
         </div>
       ))}
     </div>
