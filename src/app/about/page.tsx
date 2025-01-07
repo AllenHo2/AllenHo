@@ -51,7 +51,7 @@ export default function About() {
             />
         </div>
         <div style={{textAlign:"center"}}>
-        <i>Me posing with Sogang's Mascot (Albatross) after Sogang festival</i>
+        <i>Me posing with Sogang&apos;s Mascot (Albatross) after Sogang festival</i>
         </div>
         <br/>
         <p>
