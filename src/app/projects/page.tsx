@@ -10,9 +10,9 @@ const projectNames = [
     url: "https://allenho2.github.io/Environmental-Impacts-in-the-21st-Century/", 
     img: "/DataViz.jpg",
     description: [
-      <p>Built <strong>bar chart, line chart, parallel line chart,</strong> and <strong>scatterplot</strong> to show the significance of carbon and gas emission effects over time in the U.S.</p>,
-      <p>Designed as research paper with methodology and debrief on each chart&apos;s data and relevant information, including what objective it tackles and what data correlation is shown</p>,
-      <p>Built using <strong>Vanilla Javascript, D3.js, D3-legend library, CSS, HTML</strong></p>
+      "Built bar chart, line chart, parallel line chart, and scatterplot to show the significance of carbon and gas emission effects over time in the U.S.",
+      "Designed as research paper with methodology and debrief on each chart&apos;s data and relevant information, including what objective it tackles and what data correlation is shown",
+      "Built using Vanilla Javascript, D3.js, D3-legend library, CSS, HTML"
     ]
   },
   {
@@ -21,9 +21,9 @@ const projectNames = [
     url: "https://github.com/AllenHo2/project02-Elevator", 
     img: "/ElevatorCartoon.jpg",
     description: [
-      <p>Developed an Elevator Simulator that simulated a real-world elevator that utilizes a min heap and queues in order to drop passengers off at their closest desired floor while also picking up passengers at the same time to maximize efficiency</p>,
-      <p>Utilizes <strong>queues, min-heap, stacks, and linked lists</strong></p>,
-      <p>Built using <strong>Java</strong></p>
+      "Developed an Elevator Simulator that simulated a real-world elevator that utilizes a min heap and queues in order to drop passengers off at their closest desired floor while also picking up passengers at the same time to maximize efficiency",
+      "Utilizes queues, min-heap, stacks, and linked lists",
+      "Built using Java"
     ]
   },
   {
@@ -32,10 +32,10 @@ const projectNames = [
     url: "https://github.com/cs315-s24/project04-AllenHo2", 
     img: "/Emulator.jpg",
     description: [
-      <u>*Credit to Professor Phil Peterson for template of emulator code*</u>,
-      <p>Developed RiscV Emulator that emulated C and Assembly code that I worked on over the semester</p>,
-      <p>Developed code in C that utilizes <strong>pointers</strong> to emulate registers in RiscV as well as <strong>direct-mapped & set-associative cache</strong></p>,
-      <p>Built using <strong>C and Assembly</strong></p>
+      "*Credit to Professor Phil Peterson for template of emulator code*",
+      "Developed RiscV Emulator that emulated C and Assembly code that I worked on over the semester",
+      "Developed code in C that utilizes pointers to emulate registers in RiscV as well as direct-mapped & set-associative cache",
+      "Built using C and Assembly"
     ]
   },
 ]
