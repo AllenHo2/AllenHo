@@ -1,7 +1,7 @@
 .layout {
     display: flex;
     grid-column: auto;
-    min-height: 100svh;
+    min-height: 75svh;
     padding-left: 80px;
     padding-right: 80px;
     justify-content: space-evenly;
@@ -16,3 +16,13 @@
     justify-content: center;
     padding-top: 12px;
 }
+
+.map {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    align-items: center; 
+    width: 400px; 
+    text-align: center; 
+  }
+

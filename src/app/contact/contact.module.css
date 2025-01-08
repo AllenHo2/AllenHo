@@ -1,10 +1,11 @@
 .layout {
     display: flex;
     grid-column: auto;
-    min-height: 100svh;
+    min-height:75svh;
     padding-left: 80px;
     padding-right: 80px;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .name {
