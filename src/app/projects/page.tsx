@@ -57,7 +57,6 @@ export default function Projects() {
         width={300}
         height={300}
         style={imageStyle}
-        placeholder="blur"
         />
         </Link>
         <br/>

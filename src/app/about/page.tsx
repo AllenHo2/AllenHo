@@ -48,7 +48,6 @@ export default function About() {
               width={700}
               height={1000}
               style={imageStyle}
-              placeholder="blur"
             />
         </div>
         <div style={{textAlign:"center"}}>
