@@ -22,6 +22,7 @@ export default function Contact() {
           width={300}
           height={300}
           style={imageStyle}
+          priority
           />
           </div>
           </Link>

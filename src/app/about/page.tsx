@@ -48,6 +48,7 @@ export default function About() {
               width={700}
               height={1000}
               style={imageStyle}
+              priority
             />
         </div>
         <div style={{textAlign:"center"}}>

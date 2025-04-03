@@ -21,6 +21,7 @@ const Hero = () => {
                     objectFit="cover"
                     objectPosition="center"
                     style={imageStyle}
+                    priority
                 />
             </div>
         </div>
