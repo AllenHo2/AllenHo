@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const imageStyle = {
     borderRadius: "50%",
-    border: "5px double var(--foreground)"
+    border: "5px double var(--foreground)",
 }
 
 const Hero = () => {

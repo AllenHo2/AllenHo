@@ -26,3 +26,7 @@
     text-align: center; 
   }
 
+  .url:hover {
+    text-size-adjust: 48;
+    color:blue;
+}
