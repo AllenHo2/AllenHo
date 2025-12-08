@@ -1,13 +1,15 @@
+"use client"
 import styles from "./projects.module.css"
 import Image from "next/image"
 import Link from "next/link"
 import {imageStyle} from "../style.js"
+import { motion } from "framer-motion";
 
 const projectNames = [
   {
-    id: 1, 
-    name: "Envrionmental Impacts in the 21st Centrury", 
-    url: "https://allenho2.github.io/Environmental-Impacts-in-the-21st-Century/", 
+    id: 1,
+    name: "Envrionmental Impacts in the 21st Centrury",
+    url: "https://allenho2.github.io/Environmental-Impacts-in-the-21st-Century/",
     img: "/DataViz.jpg",
     description: [
       "Built bar chart, line chart, parallel line chart, and scatterplot to show the significance of carbon and gas emission effects over time in the U.S.",
@@ -16,9 +18,9 @@ const projectNames = [
     ]
   },
   {
-    id: 2, 
-    name: "Elevator Simulator", 
-    url: "https://github.com/AllenHo2/project02-Elevator", 
+    id: 2,
+    name: "Elevator Simulator",
+    url: "https://github.com/AllenHo2/project02-Elevator",
     img: "/ElevatorCartoon.jpg",
     description: [
       "Developed an Elevator Simulator that simulated a real-world elevator that utilizes a min heap and queues in order to drop passengers off at their closest desired floor while also picking up passengers at the same time to maximize efficiency",
@@ -27,9 +29,9 @@ const projectNames = [
     ]
   },
   {
-    id: 3, 
-    name: "RiscV Emulator", 
-    url: "https://github.com/cs315-s24/project04-AllenHo2", 
+    id: 3,
+    name: "RiscV Emulator",
+    url: "https://github.com/cs315-s24/project04-AllenHo2",
     img: "/Emulator.jpg",
     description: [
       "*Credit to Professor Phil Peterson for template of emulator code*",
@@ -51,14 +53,16 @@ export default function Projects() {
       {projectNames.map((project) => (
         <div key={project.id} className={styles.map}>
         <Link href={project.url}>
-        <Image
-        src={project.img}
-        alt="project cover"
-        width={300}
-        height={300}
-        style={imageStyle}
-        priority
-        />
+        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8}}>
+          <Image
+          src={project.img}
+          alt="project cover"
+          width={300}
+          height={300}
+          style={imageStyle}
+          priority
+          />
+        </motion.div>
         </Link>
         <br/>
         <div className={styles.name}>

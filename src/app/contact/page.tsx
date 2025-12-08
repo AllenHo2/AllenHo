@@ -1,7 +1,9 @@
+"use client"
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./contact.module.css"
 import {imageStyle} from "../style.js"
+import { motion } from "framer-motion";
 
 const contacts = [
   {id: 1, name: "Github", url: "https://github.com/AllenHo2", img: "/GithubLogo.png"},
@@ -16,14 +18,16 @@ export default function Contact() {
         <div key={contact.id}>
           <Link href={contact.url}>
           <div>
-          <Image
-          src={contact.img}
-          alt={contact.name}
-          width={300}
-          height={300}
-          style={imageStyle}
-          priority
-          />
+          <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8}}>
+            <Image
+            src={contact.img}
+            alt={contact.name}
+            width={300}
+            height={300}
+            style={imageStyle}
+            priority
+            />
+          </motion.div>
           </div>
           </Link>
           <div className={styles.name}>

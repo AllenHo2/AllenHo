@@ -1,5 +1,6 @@
 import Link from "next/link"
 import styles from "./navbar.module.css"
+import { AnimatePresence } from "framer-motion"
 
 const navNames = [
     {id: 1, name: "Home", link:"/"},
