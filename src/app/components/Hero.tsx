@@ -1,5 +1,7 @@
+"use client"
 import styles from "../page.module.css";
 import Image from "next/image"
+import { motion } from "framer-motion";
 
 const imageStyle = {
     borderRadius: "50%",
@@ -13,7 +15,7 @@ const Hero = () => {
                 <h1>Allen Ho</h1>
                 <p>Software Engineer, Computer Science B.S. @ University of San Francisco</p>
             </div>
-            <div className={styles.image}>
+            <motion.div className={styles.image} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8}}>
                 <Image
                     src="/portfolio.png"
                     alt="Portfolio Image"
@@ -23,9 +25,9 @@ const Hero = () => {
                     style={imageStyle}
                     priority
                 />
-            </div>
+            </motion.div>
         </div>
     )
 }
 
-export default Hero 
+export default Hero
