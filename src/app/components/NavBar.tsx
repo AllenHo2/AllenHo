@@ -1,5 +1,7 @@
+"use client"
 import Link from "next/link"
 import styles from "./navbar.module.css"
+import { motion } from "framer-motion"
 
 const navNames = [
     {id: 1, name: "Home", link:"/"},
@@ -11,13 +13,13 @@ const navNames = [
 
 const NavBar = () => {
     return(
-        <div className={styles.container}>
+        <motion.div className={styles.container} layoutId="underline" >
             {navNames.map((navName) => (
                 <nav key={navName.id} className="navbar">
                     <Link href={navName.link} className={styles.links}>{navName.name}</Link>
                 </nav>
             ))}
-        </div>
+        </motion.div>
     )
 }
 

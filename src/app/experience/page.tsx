@@ -1,4 +1,5 @@
 import Link from "next/link"
+import styles from "../page.module.css"
 
 const textStyle = {
     paddingLeft: 100,
@@ -7,7 +8,7 @@ const textStyle = {
 
 export default function Experience() {
     return(
-        <div style={textStyle}>
+        <div style={textStyle} className={styles.text}>
             <h1>Education</h1>
             <hr/>
             <br/>
@@ -28,7 +29,8 @@ export default function Experience() {
                 <li><strong>Full-Stack Software Engineer Intern</strong><span style={{marginLeft: 615}}></span>Bushido <span style={{marginLeft: 100}}></span> April 2025 -- Present</li>
                 <br/>
                 <ul>
-                    <li>Frontend - Backend</li>
+                    <li>Implemented end-to-end feature development by designing new database schema fields with Prisma, updating backend APIs via tRPC, and integrating data into dynamic React components, improving application functionality and user experience.</li>
+                    <li>Enhanced data accessibility and frontend performance by deploying a new feature pipeline that securely retrieved and displayed data from a PostgreSQL database to the client interface.</li>
                 </ul>
                 <br/>
                 <li><strong>Account Receivable Supervisor</strong><span style={{marginLeft: 495}}></span>San Francisco Fire Protection <span style={{marginLeft: 100}}></span> May 2024 -- August 2024</li>
@@ -62,8 +64,10 @@ export default function Experience() {
             <h1>Relevant Coursework</h1>
             <hr/>
             <br/>
+            <p>
             Data Structure and Algorithms, Introduction to A.I., Natural Language Processing, Introduction to Recommender Systems, Management Science, Computer Architecture, C and Systems Programming, Data Visualization, Management Science,
              Discrete Mathematics, Linear Algebra & Probability, Introduction to Unix Linux, Statistics
+            </p>
             <br/>
             <br/>
             <h1>Activities</h1>

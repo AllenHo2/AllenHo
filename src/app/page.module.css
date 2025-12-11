@@ -49,7 +49,7 @@
 }
 
 .main code {
-  font-family: inherit;
+  font-family: "Comic Sans MS";
   background: var(--gray-alpha-100);
   padding: 2px 4px;
   border-radius: 4px;
@@ -82,16 +82,42 @@
 }
 
 .text h1 {
-  font-size: 48px; 
-  line-height: 1.2; 
-  font-weight: bold; 
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: bold;
   margin-bottom: 40px;
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+  font-family: "Comic Sans MS";
+}
+.text h2 {
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+  font-family: "Comic Sans MS";
 }
 
 .text p {
   display: inline;
-  font-size: 24px; 
-  line-height: 1.2; 
+  font-size: 24px;
+  line-height: 1.2;
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+  font-family: "Comic Sans MS";
+}
+
+.text ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+  font-family: "Comic Sans MS";
+}
+
+.text i {
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black;
+  font-family: "Comic Sans MS";
 }
 
 
@@ -120,8 +146,8 @@
   width: 500px;
   height: 550px;
   position: relative;
-  border-color: #1a1a1a;
-  border-radius: 50%;
+  /*border-color: #1a1a1a;*/
+  /*border-radius: 50%;*/
 }
 
 a.primary {
@@ -210,5 +236,3 @@ a.secondary {
     filter: invert();
   }
 }
-
-

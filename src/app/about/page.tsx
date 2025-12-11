@@ -64,7 +64,7 @@ export default function About() {
             picked up a few French phrases which I intend to study more on.
         </p>
             <br/>
-        <motion.div style={parentStyle} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8}}>
+        <motion.div style={parentStyle} initial={{ scale: 0, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} transition={{ duration: 1.5 }} viewport={{ once: true }}>
         <Image
           src="/Crocheting.png"
           alt="Crocheting.png"
