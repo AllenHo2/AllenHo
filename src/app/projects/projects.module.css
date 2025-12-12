@@ -1,3 +1,13 @@
+.description {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px black;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    text-align: center;
+}
 .layout {
     display: flex;
     grid-column: auto;
@@ -15,15 +25,18 @@
     display: flex;
     justify-content: center;
     padding-top: 12px;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px black;
+    font-family: "Comic Sans MS";
 }
 
 .map {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center; 
-    width: 400px; 
-    text-align: center; 
+    align-items: center;
+    width: 400px;
+    text-align: center;
   }
 
   .url:hover {

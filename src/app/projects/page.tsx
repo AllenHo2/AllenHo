@@ -69,11 +69,13 @@ export default function Projects() {
           <a href={project.url} style={titleStyle}>{project.name}</a>
         </div>
         <br/>
-        <ul>
-          {project.description.map((text, index) => (
-            <li key={index}>{text}</li>
-          ))}
-        </ul>
+        <div className={styles.description}>
+          <ul>
+            {project.description.map((text, index) => (
+              <li key={index}>{text}</li>
+            ))}
+          </ul>
+        </div>
         </div>
       )
         )}

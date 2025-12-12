@@ -1,6 +1,6 @@
 import "./globals.css";
 import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Background from "./components/Background";
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
@@ -10,7 +10,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <Background>
           <NavBar/>
           {children}
-          <Footer/>
+          {/*<Footer/>*/}
         </Background>
       </body>
     </html>
