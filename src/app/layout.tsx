@@ -10,7 +10,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         <Background>
           <NavBar/>
           {children}
-          {/*<Footer/>*/}
+          <Footer/>
         </Background>
       </body>
     </html>

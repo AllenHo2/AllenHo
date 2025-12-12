@@ -5,17 +5,17 @@ export default function Background({children}: {children: React.ReactNode}) {
     <Warp
       width="100%"
       height="100%"
-      colors={["#121212", "#878787", "#ffffff", "#000000", "#878787", "#ffffff", "#000000", "#878787", "#ffffff"]}
-      proportion={0.5}
-      softness={1}
+      colors={["#121212", "#7301fe", "#1858bf", "#000000", "#7301fe", "#1858bf", "#121212", "#1858bf"]}
+      proportion={1.5}
+      softness={0.4}
       distortion={0.25}
       swirl={0.8}
-      swirlIterations={10}
-      shape="checks"
-      shapeScale={0.1}
-      speed={1.3}
+      swirlIterations={5}
+      shape="edge"
+      shapeScale={0.05}
+      speed={1}
     >
-      {children}
+    {children}
     </Warp>
   );
 }

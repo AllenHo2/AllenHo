@@ -7,12 +7,13 @@
   --button-secondary-hover: #f2f2f2;
 
   display: flex;
+  flex-direction: row;
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
-  justify-items: start;
+  justify-content: center;
   min-height: 100svh;
   padding: 80px;
-  gap: 64px;
+  gap: clamp(64px, 10vw, 640px);
   font-family: var(--font-geist-sans);
 }
 
