@@ -33,7 +33,7 @@ export default function About() {
   return (
     <div>
       <div className={styles.about}>
-        <p >
+        <p>
             Hello! My name is Allen Ho. I was born and raised in the heart of San Francisco, currently also
             pursuing a Bachelors of Science in Computer Science at the University of San Francisco.
             Excited by the new opportunities and vast fields that computer science allows to explore, I

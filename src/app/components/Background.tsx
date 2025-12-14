@@ -1,21 +1,24 @@
-import { Warp } from '@paper-design/shaders-react';
+import { Water } from '@paper-design/shaders-react';
 
 export default function Background({children}: {children: React.ReactNode}) {
   return (
-    <Warp
+
+    <Water
       width="100%"
       height="100%"
-      colors={["#121212", "#7301fe", "#1858bf", "#000000", "#7301fe", "#1858bf", "#121212", "#1858bf"]}
-      proportion={1.5}
-      softness={0.4}
-      distortion={0.25}
-      swirl={0.8}
-      swirlIterations={5}
-      shape="edge"
-      shapeScale={0.05}
-      speed={1}
+      colorBack="#000000"
+      colorHighlight="#fff5f5"
+      highlights={0.26}
+      layering={1}
+      edges={1}
+      waves={1}
+      caustic={1}
+      size={1.9}
+      speed={0.25}
+      scale={1.72}
+      fit="contain"
     >
     {children}
-    </Warp>
+    </Water>
   );
 }
