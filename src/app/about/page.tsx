@@ -31,6 +31,13 @@ const collageStyle = {
 
 export default function About() {
   return (
+      <motion.main
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -40 }}
+        transition={{ duration: 0.6, ease: "easeInOut" }}
+        style={{ height: "200vh" }}
+      >
     <div>
       <div className={styles.about}>
         <p>
@@ -92,5 +99,6 @@ export default function About() {
         </p>
       </div>
     </div>
+    </motion.main>
   );
 }

@@ -15,7 +15,7 @@ const Hero = () => {
                 <h1>Allen Ho</h1>
                 <p>Software Engineer, Computer Science B.S. @ University of San Francisco</p>
             </div>
-        <motion.div className={styles.image} initial={{ scale: 0.5 }} animate={{ scale: 1, rotate:360 }} transition={{ duration: 0.8}}>
+        <motion.div className={styles.image} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8}}>
               <motion.div>
                 <Image
                     src="/portfolio.png"

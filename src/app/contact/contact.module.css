@@ -1,7 +1,7 @@
 .layout {
     display: flex;
     grid-column: auto;
-    min-height:75svh;
+    min-height:100svh;
     padding-left: 80px;
     padding-right: 80px;
     justify-content: space-evenly;

@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./contact.module.css"
 import {imageStyle} from "../style.js"
 import { motion } from "framer-motion";
+import Animation from "../components/Animation";
 
 const contacts = [
   {id: 1, name: "Github", url: "https://github.com/AllenHo2", img: "/GithubLogo.png"},
@@ -13,28 +14,30 @@ const contacts = [
 
 export default function Contact() {
   return (
-    <div className={styles.layout}>
-      {contacts.map((contact) => (
-        <div key={contact.id}>
-          <Link href={contact.url}>
-          <div>
-          <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8}}>
-            <Image
-            src={contact.img}
-            alt={contact.name}
-            width={300}
-            height={300}
-            style={imageStyle}
-            priority
-            />
-          </motion.div>
+    <Animation>
+      <div className={styles.layout}>
+        {contacts.map((contact) => (
+          <div key={contact.id}>
+            <Link href={contact.url}>
+            <div>
+            <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8}}>
+              <Image
+              src={contact.img}
+              alt={contact.name}
+              width={300}
+              height={300}
+              style={imageStyle}
+              priority
+              />
+            </motion.div>
+            </div>
+            </Link>
+            <div className={styles.name}>
+              {contact.name}
+            </div>
           </div>
-          </Link>
-          <div className={styles.name}>
-            {contact.name}
-          </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </Animation>
   );
 }

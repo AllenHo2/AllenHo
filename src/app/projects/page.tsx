@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import {imageStyle} from "../style.js"
 import { motion } from "framer-motion";
+import Animation from "../components/Animation"
 
 const projectNames = [
   {
@@ -49,36 +50,38 @@ const titleStyle = {
 };
 export default function Projects() {
   return (
-    <div className={styles.layout}>
-      {projectNames.map((project) => (
-        <div key={project.id} className={styles.map}>
-        <Link href={project.url}>
-        <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8}}>
-          <Image
-          src={project.img}
-          alt="project cover"
-          width={300}
-          height={300}
-          style={imageStyle}
-          priority
-          />
-        </motion.div>
-        </Link>
-        <br/>
-        <div className={styles.name}>
-          <a href={project.url} style={titleStyle}>{project.name}</a>
-        </div>
-        <br/>
-        <div className={styles.description}>
-          <ul>
-            {project.description.map((text, index) => (
-              <li key={index}>{text}</li>
-            ))}
-          </ul>
-        </div>
-        </div>
-      )
-        )}
-    </div>
+    <Animation>
+      <div className={styles.layout}>
+        {projectNames.map((project) => (
+          <div key={project.id} className={styles.map}>
+          <Link href={project.url}>
+          <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8}}>
+            <Image
+            src={project.img}
+            alt="project cover"
+            width={300}
+            height={300}
+            style={imageStyle}
+            priority
+            />
+          </motion.div>
+          </Link>
+          <br/>
+          <div className={styles.name}>
+            <a href={project.url} style={titleStyle}>{project.name}</a>
+          </div>
+          <br/>
+          <div className={styles.description}>
+            <ul>
+              {project.description.map((text, index) => (
+                <li key={index}>{text}</li>
+              ))}
+            </ul>
+          </div>
+          </div>
+        )
+          )}
+      </div>
+    </Animation>
   );
 }

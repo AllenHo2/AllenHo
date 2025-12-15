@@ -1,7 +1,8 @@
 import "./globals.css";
 import NavBar from "./components/NavBar";
-// import Footer from "./components/Footer";
 import Background from "./components/Background";
+import { AnimatePresence } from "framer-motion";
+
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
@@ -9,8 +10,11 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
       <body>
         <Background>
           <NavBar/>
-          {children}
-          {/*<Footer/>*/}
+          <AnimatePresence mode="wait">
+            <div>
+            {children}
+            </div>
+          </AnimatePresence>
         </Background>
       </body>
     </html>
