@@ -30,14 +30,15 @@ const collageStyle = {
 }
 
 export default function About() {
+  console.log("About Page Loaded");
   return (
-      <motion.main
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -40 }}
-        transition={{ duration: 0.6, ease: "easeInOut" }}
-        style={{ height: "200vh" }}
-      >
+    <motion.main
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -40 }}
+      transition={{ duration: 0.6, ease: "easeInOut" }}
+      style={{ height: "200vh" }}
+    >
     <div>
       <div className={styles.about}>
         <p>
@@ -77,6 +78,7 @@ export default function About() {
           alt="Crocheting.png"
           width={700}
           height={1000}
+          loading="lazy"
           style={collageStyle}
         />
         <Image
@@ -84,6 +86,7 @@ export default function About() {
           alt="Drawstring.jpg"
           width={700}
           height={1000}
+          loading="lazy"
           style={collageStyle}
         />
         </motion.div>

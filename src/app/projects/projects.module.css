@@ -9,9 +9,12 @@
     text-align: center;
 }
 .layout {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 400px); /* 3 columns, each 400px wide */
+    grid-auto-rows: auto;
     grid-column: auto;
-    min-height: 100svh;
+    gap: 24px;
+    min-height: 1svh;
     padding-left: 80px;
     padding-right: 80px;
     justify-content: space-evenly;
@@ -30,8 +33,8 @@
     font-family: "Comic Sans MS";
 }
 
-.map {
-    display: flex;
+.section {
+    display: flexbox;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -42,4 +45,14 @@
   .url:hover {
     text-size-adjust: 48;
     color:blue;
+}
+
+
+/* wrapper for the visual element (Alloy or Image) to ensure it's centered */
+.visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 6px;
 }

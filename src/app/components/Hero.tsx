@@ -13,7 +13,9 @@ const Hero = () => {
         <div className={styles.page}>
             <div className={styles.text}>
                 <h1>Allen Ho</h1>
-                <p>Software Engineer, Computer Science B.S. @ University of San Francisco</p>
+                <p>Software Engineer</p>
+                <br/>
+                <p>Computer Science B.S. with Concentration in A.I. @ USFCA</p>
             </div>
         <motion.div className={styles.image} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 0.8}}>
               <motion.div>

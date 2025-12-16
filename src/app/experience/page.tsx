@@ -15,14 +15,19 @@ export default function Experience() {
         <hr />
         <br />
         <h2>University of San Francisco <span style={{ marginLeft: 305 }}></span>  B.S. in Computer Science with Concentration in A.I.</h2>
-        <h2><span style={{ marginLeft: 626 }}></span> Graduated : December 2025</h2>
+        <h2><span style={{ marginLeft: 636 }}></span> Graduated : December 2025</h2>
         <br />
-        <h2>Sogang University <span style={{ marginLeft: 408 }}></span>  Study Abroad: December 2024</h2>
-        <br />
-        <p><strong>Relevant Skills: </strong> C, D3.js, Next.js, Typescript, React.js, Java, Git, P5, C++, Python, Vanilla Javascript, HTML, CSS, Terminal, Excel</p>
+        <h2>Sogang University <span style={{ marginLeft: 418 }}></span>  Study Abroad: December 2024</h2>
+        <br/>
+        <br/>
+        <p><strong>Relevant Skills: </strong> Typescript, Next.js, C, D3.js, React.js, Java, Git, P5, C++, Python, Vanilla Javascript, HTML, CSS, Terminal, Excel</p>
+        <br/>
         <p><strong>Technology: </strong> Docker, Linear, Prisma, PostgresSQL Databases, Convex, WorkOS</p>
-        <p><strong>Languages: </strong>Cantonese, English, Korean, Japanese</p>
-        <br />
+        <br/>
+        <p><strong>Languages: </strong>Cantonese, English, Korean, Japanese, French</p>
+        <br/>
+        <br/>
+        <br/>
         <h1>Work Experience</h1>
         <hr />
         <br />
