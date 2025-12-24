@@ -4,7 +4,8 @@ import Animation from "../components/Animation"
 
 const textStyle = {
     paddingLeft: 100,
-    paddingRight: 100
+    paddingRight: 100,
+    paddingBottom: 100
 }
 
 export default function Experience() {
